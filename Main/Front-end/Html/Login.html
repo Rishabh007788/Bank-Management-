@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<center><h1>User Login</h1></center>
+<fieldset>
+<form action="">
+	<lebel for="email">Email Id : </lebel>
+	<input type="email" id="email" placeholder="enter your email..." name="email"><br><br>
+	<label for="pass">Password : </label>
+	<input type="password" id="pass" name="password" placeholder="enter password"><br><br>
+	<pre><input type="submit">  <input type="reset"> </pre>
+</form>
+</fieldset><br>
+<pre><a href="Fp.html"><button id="fp">forgot password</button></a>  <a href="Signup.html"><button id="fp">Signup</button></a> </pre>
+<% String errorMessage = (String) request.getAttribute("errorMessage"); %>
+    <% if (errorMessage != null) { %>
+        <p style="color: red;"><%= errorMessage %></p>
+    <% } %>
+
+</body>
+</html>
